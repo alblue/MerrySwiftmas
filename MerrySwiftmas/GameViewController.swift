@@ -53,6 +53,20 @@ class GameViewController: UIViewController {
 			// and add the cone to the tree
 			tree.addChildNode(cone)
 		}
+
+		// adding presents
+		for i in 1...3 {
+			// presents are represented with a box
+			let present = SCNNode(geometry: SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0))
+			// presents are coloured blue
+			present.geometry?.firstMaterial?.diffuse.contents = UIColor.blueColor()
+			// position present at base of tree
+			present.position.x = Float(i % 2) * 2
+			present.position.z = Float(i / 2) * 2
+			present.position.y = -1
+			// and add to the tree
+			tree.addChildNode(present)
+		}
 	}
 
 	override func prefersStatusBarHidden() -> Bool {
