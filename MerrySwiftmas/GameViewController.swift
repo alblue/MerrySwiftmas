@@ -24,10 +24,19 @@ class GameViewController: UIViewController {
 		// get the root node from the scene
 		let rootNode = scene.rootNode
 
-		// create a ChristmasTree
-		let tree = ChristmasTree()
-		// and add it to the root node as before
-		rootNode.addChildNode(tree)
+		// add a forest by moving x and z position
+		for x in stride(from:0, to:100, by:10) {
+			for z in stride(from:0, to:100, by:10) {
+
+				// create a ChristmasTree
+				let tree = ChristmasTree()
+				tree.position.x = Float(x)
+				tree.position.z = Float(z)
+
+				// and add it to the root node as before
+				rootNode.addChildNode(tree)
+			}
+		}
 
 		// and enable automatic lighting for the scene
 		scnView.autoenablesDefaultLighting = true
