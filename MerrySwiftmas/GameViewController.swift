@@ -32,6 +32,12 @@ class GameViewController: UIViewController {
 
 		// and add it to the root node so it is seen
 		rootNode.addChildNode(tree)
+
+		// set the cylinder's colour to brown
+		cylinder.firstMaterial?.diffuse.contents = UIColor.brownColor()
+
+		// and enable automatic lighting for the scene
+		scnView.autoenablesDefaultLighting = true
 	}
 
 	override func prefersStatusBarHidden() -> Bool {
