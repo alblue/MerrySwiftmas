@@ -3,6 +3,17 @@
 
 import SceneKit
 
+let colors = [
+	UIColor.blueColor(),
+	UIColor.cyanColor(),
+	UIColor.magentaColor(),
+	UIColor.orangeColor(),
+	UIColor.purpleColor(),
+	UIColor.redColor(),
+	UIColor.whiteColor(),
+	UIColor.yellowColor(),
+]
+
 class ChristmasTree: SCNNode {
 	override init() {
 		super.init()
@@ -38,7 +49,7 @@ class ChristmasTree: SCNNode {
 			// presents are represented with a box
 			let present = SCNNode(geometry: SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0))
 			// presents are coloured blue
-			present.geometry?.firstMaterial?.diffuse.contents = UIColor.blueColor()
+			present.geometry?.firstMaterial?.diffuse.contents = colors[random() % colors.count]
 			// position present at base of tree
 			present.position.x = Float(i % 2) * 2
 			present.position.z = Float(i / 2) * 2
