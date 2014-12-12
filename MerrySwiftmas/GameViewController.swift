@@ -21,6 +21,17 @@ class GameViewController: UIViewController {
 		// allows the user to manipulate the camera
 		scnView.allowsCameraControl = true
 
+		// get the root node from the scene
+		let rootNode = scene.rootNode
+
+		// create a cylinder to represent the tree trunk
+		let cylinder = SCNCylinder(radius:1, height:3)
+
+		// create a tree node to add to the scene
+		let tree = SCNNode(geometry: cylinder)
+
+		// and add it to the root node so it is seen
+		rootNode.addChildNode(tree)
 	}
 
 	override func prefersStatusBarHidden() -> Bool {
