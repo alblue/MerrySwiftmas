@@ -32,6 +32,8 @@ class GameViewController: UIViewController {
 				let tree = ChristmasTree()
 				tree.position.x = Float(x)
 				tree.position.z = Float(z)
+				tree.rotation.y = 1
+				tree.rotation.w = Float(M_PI) * Float(arc4random_uniform(180)) / Float(180)
 
 				// and add it to the root node as before
 				rootNode.addChildNode(tree)
