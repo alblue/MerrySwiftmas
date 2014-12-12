@@ -39,17 +39,20 @@ class GameViewController: UIViewController {
 		// and enable automatic lighting for the scene
 		scnView.autoenablesDefaultLighting = true
 
-		// adding a cone to represent the tree's leaves
-		let cone = SCNNode(geometry: SCNCone(topRadius:0, bottomRadius:3, height:3))
+		// adding three stacked cones
+		for i in 1...3 {
+			// adding a cone to represent the tree's leaves
+			let cone = SCNNode(geometry: SCNCone(topRadius:0, bottomRadius:3, height:3))
 
-		// position the cone up the Y axis at top of trunk
-		cone.position.y = 3
+			// position the cone up the Y axis at top of trunk
+			cone.position.y = 2 * Float(i) + 1
 
-		// give the tree trunk a green colour
-		cone.geometry?.firstMaterial?.diffuse.contents = UIColor.greenColor()
+			// give the tree trunk a green colour
+			cone.geometry?.firstMaterial?.diffuse.contents = UIColor.greenColor()
 
-		// and add the cone to the tree
-		tree.addChildNode(cone)
+			// and add the cone to the tree
+			tree.addChildNode(cone)
+		}
 	}
 
 	override func prefersStatusBarHidden() -> Bool {
