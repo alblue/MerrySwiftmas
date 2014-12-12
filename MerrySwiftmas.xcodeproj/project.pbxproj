@@ -14,6 +14,7 @@
 		FA1FDB901A3AE1CA005E9433 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1FDB8F1A3AE1CA005E9433 /* Images.xcassets */; };
 		FA1FDB931A3AE1CA005E9433 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1FDB911A3AE1CA005E9433 /* LaunchScreen.xib */; };
 		FA1FDB9F1A3AE1CA005E9433 /* MerrySwiftmasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1FDB9E1A3AE1CA005E9433 /* MerrySwiftmasTests.swift */; };
+		FA1FDBA91A3AF6CD005E9433 /* ChristmasTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1FDBA81A3AF6CD005E9433 /* ChristmasTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		FA1FDB981A3AE1CA005E9433 /* MerrySwiftmasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MerrySwiftmasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1FDB9D1A3AE1CA005E9433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA1FDB9E1A3AE1CA005E9433 /* MerrySwiftmasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerrySwiftmasTests.swift; sourceTree = "<group>"; };
+		FA1FDBA81A3AF6CD005E9433 /* ChristmasTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChristmasTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				FA1FDB861A3AE1CA005E9433 /* AppDelegate.swift */,
 				FA1FDB881A3AE1CA005E9433 /* art.scnassets */,
 				FA1FDB8A1A3AE1CA005E9433 /* GameViewController.swift */,
+				FA1FDBA81A3AF6CD005E9433 /* ChristmasTree.swift */,
 				FA1FDB8C1A3AE1CA005E9433 /* Main.storyboard */,
 				FA1FDB8F1A3AE1CA005E9433 /* Images.xcassets */,
 				FA1FDB911A3AE1CA005E9433 /* LaunchScreen.xib */,
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA1FDB8B1A3AE1CA005E9433 /* GameViewController.swift in Sources */,
+				FA1FDBA91A3AF6CD005E9433 /* ChristmasTree.swift in Sources */,
 				FA1FDB871A3AE1CA005E9433 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +415,7 @@
 				FA1FDBA41A3AE1CA005E9433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA1FDBA51A3AE1CA005E9433 /* Build configuration list for PBXNativeTarget "MerrySwiftmasTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				FA1FDBA71A3AE1CA005E9433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
