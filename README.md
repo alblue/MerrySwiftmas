@@ -7,7 +7,7 @@ which shows how to create a Christmas tree using Swift and SceneKit for iOS.
 
 The corresponding article describes how the code is put together.
 
-This project was created with Xcode 6.1 and Swift 1.1. Later versions of
+This project was created with Xcode 7.1 and Swift 2.1. Later versions of
 either Xcode or Swift may require mnior code tweaks.
 
 For more information on Swift, see

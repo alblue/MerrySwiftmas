@@ -13,7 +13,7 @@ class GameViewController: UIViewController {
 		let scene = SCNScene()
 
 		// retrieve the SCNView
-		let scnView = self.view as SCNView
+		let scnView = self.view as! SCNView
 
 		// set the scene to the view
 		scnView.scene = scene
@@ -25,8 +25,8 @@ class GameViewController: UIViewController {
 		let rootNode = scene.rootNode
 
 		// add a forest by moving x and z position
-		for x in stride(from:0, to:100, by:10) {
-			for z in stride(from:0, to:100, by:10) {
+		for x in 0.stride(to:100, by:10) {
+			for z in 0.stride(to:100, by:10) {
 
 				// create a ChristmasTree
 				let tree = ChristmasTree()
@@ -48,11 +48,11 @@ class GameViewController: UIViewController {
 		return true
 	}
 
-	override func supportedInterfaceOrientations() -> Int {
+	override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
 		if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-			return Int(UIInterfaceOrientationMask.AllButUpsideDown.rawValue)
+			return UIInterfaceOrientationMask.AllButUpsideDown
 		} else {
-			return Int(UIInterfaceOrientationMask.All.rawValue)
+			return UIInterfaceOrientationMask.All
 		}
 	}
 
